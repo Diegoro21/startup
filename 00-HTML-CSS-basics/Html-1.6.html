@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form action="#" method="post">
+    <label for="firstName">First Name:</label><br/>
+    <input type="text" name="firstName" id="firstName" required/><br/><br/>
+    <label for="lastName">Last Name:</label><br/>
+    <input type="text" name="lastName" id="lastName" required/><br/><br/>
+    <label for="email">E-mail:</label><br/>
+    <input type="email" name="email" id="email" required><br/><br/>
+    <label for="birthday">Birthday:</label><br/>
+    <input type="date" name="birthday" id="birthday" required><br/><br/>
+    <label for="favoriteSport">Favorite Sport:</label>
+    <input list="favoriteSport" required>
+    <datalist id="favoriteSport">
+        <option value="Soccer">
+        <option value="Basketball">
+        <option value="Hockey">
+        <option value="Volleyball">
+        <option value="Softball">
+    </datalist>
+    <br/><br/>
+    <label for="bio">Bio:</label><br/>
+    <textarea name="bio" id="bio" rows="10" cols="30" required></textarea><br/><br/>
+    <input type="submit"/><input type="reset" value="Reset" />
+
+    <p>Birthday input doesn't work in IE 9 or less and Firefox</p>
+</form>
+</body>
+</html>
